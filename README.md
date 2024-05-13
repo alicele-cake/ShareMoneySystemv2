@@ -19,6 +19,18 @@
 　　防SQL Injection
 
 ## 畫面:
+帳號登入註冊:
+https://youtu.be/-XaEBzolAEQ?si=t38Mi5VlgbTyRSu7
+
+
+加入帳單好友:
+https://youtu.be/0vgTHBfKTvo?si=CafElshQa93FgC_1
+	
+創造帳單:
+https://youtu.be/dagi1BISU5k?si=sNQZftFrAY81ss7m
+
+使用資料庫:
+https://youtu.be/znzMo_mL6Pg?si=-FZMYsRE0szseFKW
 
 ## 環境:
 
