@@ -1,0 +1,35 @@
+﻿@model List<MVC_crud.Models.Entities.Account>
+@{
+    // 獲取當前時間
+    var currentTime = DateTime.Now;
+}
+
+<h1>Create Bill</h1>
+<form method="post" action="/ShareAct/create">
+    <!-- 在表單中添加一個隱藏字段，將當前時間作為其值 -->
+    <input type="hidden" name="currentTime" value="@currentTime.ToString("yyyy-MM-dd HH:mm:ss")" />
+
+    <div class="mt-3">
+        <label class="form-label">Bill Name :</label>
+        <input type="text" class="form-control" name="BillName" />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">Amount :</label>
+        <input type="text" class="form-control" name="Amount" />
+    </div>
+    <div class="mt-3">
+        @foreach (var account in Model)
+        {
+            <input type="checkbox" id="@account.Account_ID" name="selectedAccounts" value="@account.Account_ID" />
+            <label for="@account.Account_ID">@account.Name</label>
+
+        }
+    </div>
+    <div class="mt-3">
+        <a href="/ShareAct/createFriends" class="btn btn-secondary">Add Friends</a>
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="#" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

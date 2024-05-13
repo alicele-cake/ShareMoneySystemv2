@@ -1,0 +1,23 @@
+﻿@model MVC_crud.Models.Entities.Account
+
+<h1> Register</h1>
+<form method="post" action="/Enter/register">
+    <div class="mt-3">
+        <label class="form-label">Name:</label>
+        <input type="text" class="form-control" asp-for="Name" />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">Password:</label>
+        <input type="text" class="form-control" asp-for="Password" />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">確認密碼:</label>
+        <input type="text" class="form-control" name="checkP" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </div>
+    <div class="mt-3">
+    <a href="/Enter/login" class="btn btn-secondary">Go to Login</a>
+</div>
+</form>

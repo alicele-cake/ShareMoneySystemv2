@@ -1,0 +1,41 @@
+﻿@model List<MVC_crud.Models.Entities.BillTable>
+@{
+    int count = 1;
+}
+
+
+
+<h1> System View</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Money</th>
+            <th>Avg</th>
+            <th>People</th>
+        </tr>
+    </thead>
+
+    <tbody>
+@foreach (var BillTables in Model)
+        {
+            <tr>
+                    <td>@count</td>
+                    <td>@BillTables.Bill_Name</td>
+                    <td>@BillTables.Total_Amount</td>
+                    <td>@BillTables.Average_Amount</td>
+                    <td>@BillTables.Total_Users</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="CustomersHome"
+                    asp-action="EditCust" asp-route-custID="@BillTables.Bill_ID">Bill_ID</a>
+                </td>
+            </tr>
+            count++;
+        }
+    </tbody>
+
+</table>
+
