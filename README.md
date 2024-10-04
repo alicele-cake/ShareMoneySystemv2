@@ -2,8 +2,6 @@
 
 **作品名稱:分帳系統(MVC架構)**
 
-**更新日期:2024/05/13**
-
 ## 描述:
 這是我的作品。
 
@@ -45,10 +43,44 @@ https://youtu.be/znzMo_mL6Pg?si=-FZMYsRE0szseFKW
 ## 環境:
 
 ## 資料夾說明:
-Controllers:
+#### Controllers:
+　　 Controllers/HomeController.cs
 
-Models:
+　　 Controllers/EnterController.cs
 
-Views:
+　　 Controllers/ShareActController.cs
 
+　　 Controllers/SystemController.cs
+
+
+
+#### Models:
+　　 Models/Entities/Account.cs : 帳號的類別
+
+　　 Models/Entities/Bill.cs : 帳單的類別
+
+　　 Models/Entities/BillTable.cs : 顯示全部選單的類別
+ 
+　　 Models/Entities/Bill_Detail.cs
+
+　　 Models/Entities/CheckFriends.cs : 朋友的類別
+
+　　 Models/Entities/Friends.cs : 顯示擁有的朋友的類別 
+
+
+#### Views:
+
+　　 Views/Home/Index.cshtml
+
+　　 Views/Enter/login.cshtml
+
+　　 Views/Enter/register.cshtml
+
+
+　　 Views/ShareAct/create.cshtml
+
+　　 Views/ShareAct/createFriends.cshtml
+
+
+　　 Views/System/systemView.cshtml
 
