@@ -1,9 +1,9 @@
-# 分帳系統(MVC架構)描述
+# 分帳系統(MVC架構)
 
 **作品名稱:分帳系統(MVC架構)**
 
 ## 描述:
-這是我的作品。
+根據同學提供的靈感，我所創作的程式作品。
 
 　　 **C#：** 主要程式語言。
 
@@ -14,6 +14,10 @@
 　　 **Razor 語法：** create.cshtml 文件使用 Razor 語法，用於在 ASP.NET 中在 HTML 裡嵌入 C# 的模板語言。
 
 　　 **SQL：** 程式中多次使用 SQL 查詢來與資料庫交互。
+
+使用者案例圖:
+
+![UseCaseDiagram2-1](https://github.com/user-attachments/assets/849fb59f-6cc8-40da-bf80-c20826e11b01)
 
 ## 功能:
 　　帳號登入註冊
@@ -31,7 +35,7 @@
 https://youtu.be/-XaEBzolAEQ?si=t38Mi5VlgbTyRSu7
 
 
-加入帳單好友:
+加入好友(分帳者):
 https://youtu.be/0vgTHBfKTvo?si=CafElshQa93FgC_1
 	
 創造帳單:
@@ -44,43 +48,51 @@ https://youtu.be/znzMo_mL6Pg?si=-FZMYsRE0szseFKW
 
 ## 資料夾說明:
 #### Controllers:
-　　 Controllers/HomeController.cs
+　　 /HomeController.cs : 範本Controllers
 
-　　 Controllers/EnterController.cs
+　　 /EnterController.cs : 登入註冊與核對系統Controllers
 
-　　 Controllers/ShareActController.cs
+　　 /ShareActController.cs : 添加帳單、朋友(分帳者)Controllers
 
-　　 Controllers/SystemController.cs
+　　 /SystemController.cs : 使用者帳單管理Controllers
 
 
 
 #### Models:
-　　 Models/Entities/Account.cs : 帳號的類別
+　　 /Entities/Account.cs : 帳號的類別
 
-　　 Models/Entities/Bill.cs : 帳單的類別
+　　 /Entities/Bill.cs : 對外顯示帳單資訊的類別
 
-　　 Models/Entities/BillTable.cs : 顯示全部選單的類別
+　　 /Entities/BillTable.cs : 某帳單的一部分資訊的類別
  
-　　 Models/Entities/Bill_Detail.cs
+　　 /Entities/Bill_Detail.cs 一筆帳單的時間的類別
 
-　　 Models/Entities/CheckFriends.cs : 朋友的類別
+　　 /Entities/CheckFriends.cs : 朋友(分帳者)的類別
 
-　　 Models/Entities/Friends.cs : 顯示擁有的朋友的類別 
+　　 Models/Entities/Friends.cs : 顯示擁有的朋友(分帳者)的類別 
+
+
+#### 資料庫結構ERD:
+
+![ERDDiagram1v3-1](https://github.com/user-attachments/assets/8bde7f9c-c9d6-4235-bf32-5822a771c534)
+
+
+
 
 
 #### Views:
 
-　　 Views/Home/Index.cshtml
+　　 /Home/Index.cshtml : 範本首頁UI(已自動調整其他UI為第一頁面)
 
-　　 Views/Enter/login.cshtml
+　　 /Enter/login.cshtml : 登入UI(為第一頁面)
 
-　　 Views/Enter/register.cshtml
+　　 /Enter/register.cshtml 註冊UI
 
+　　 /Shared/_Layout.cshtml : 共用的導覽列 (Navbar) UI
 
-　　 Views/ShareAct/create.cshtml
+　　 /ShareAct/create.cshtml : 建立帳單UI
 
-　　 Views/ShareAct/createFriends.cshtml
+　　 /ShareAct/createFriends.cshtml : 添加朋友(分帳者)UI
 
-
-　　 Views/System/systemView.cshtml
+　　 /System/systemView.cshtml : 使用者的帳單管理UI
 
