@@ -3,7 +3,7 @@
 **作品名稱:分帳系統(MVC架構)**
 
 ## 描述:
-在學校的課程(高效網頁課程)，根據上課內容，在期末成果發表前的半成品。
+在學校的課程(高效網頁課程)，根據上課內容(ASP.NET Core)，在期末成果發表前的半成品。
 
 我負責後端，**C#** 為主要程式語言，給組員看得半成品程式(**此Github都是我寫的程式**)。
 
@@ -39,7 +39,7 @@ https://youtu.be/dagi1BISU5k?si=sNQZftFrAY81ss7m
 https://youtu.be/znzMo_mL6Pg?si=-FZMYsRE0szseFKW
 
 ## 環境:
-
+Visual Studio 2022
 ## 資料夾說明:
 #### Controllers:
 　　 /HomeController.cs : 範本Controllers
